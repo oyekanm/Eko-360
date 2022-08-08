@@ -37,7 +37,7 @@ body {
   line-height: 20px;
   color: #333333;
   text-decoration: none;
-  padding: 25px 6px 18px;
+  padding: 25px 6px 19px;
   transition: all 0.3s;
 }
 .Nav__link:hover {
@@ -131,7 +131,12 @@ body {
   border-radius: 8px;
   padding: 2rem 5.8rem;
 }
-.Form__link {
+
+.Form__link,
+.Form__link:link,
+.Form__link:visited,
+.Form__link:active,
+.Form__link:hover {
   font-weight: 600;
   font-size: 2rem;
   line-height: 25px;
@@ -208,11 +213,11 @@ body {
   border-radius: 4px;
   display: inline-block;
   padding: 1rem 2.2rem;
-  transition: all 0.2s;
+  transition: transform 0.2s;
 }
 .Dataset--button:hover {
   transform: translateY(-5px);
-  box-shadow: 0px 30px 15px -17px rgba(0, 0, 0, 1);
+  box-shadow: 0px 30px 15px -17px rgba(0, 0, 0, 0.2);
 }
 .Dataset__link,
 .Dataset__link:link,
@@ -238,6 +243,12 @@ body {
   border-radius: 8px;
   padding: 2rem 4rem;
   margin: 5rem auto;
+  transition: all 0.2s;
+}
+.view-dataset:hover {
+  background: #ffffff;
+  border: none;
+  box-shadow: 0px 0px 25px rgb(100 100 111 / 0.2);
 }
 .view-link,
 .view-link:link,
@@ -413,6 +424,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
+  border-radius: 5px;
   margin: 10% auto 6%;
 }
 .About__text {
@@ -560,7 +572,7 @@ body {
   margin: 2rem auto 5rem;
 }
 .Publications-height {
-  height: 137px;
+  height: 170px;
   margin-bottom: 5rem;
 }
 .Publications__img {
