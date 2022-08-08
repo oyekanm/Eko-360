@@ -141,7 +141,9 @@
   .footer__div {
     text-align: center;
   }
-
+  .About__div {
+    margin: 15% auto 6%;
+  }
   /* CONTACT */
 
   .Contact__div {
